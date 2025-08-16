@@ -13,7 +13,9 @@
     "typecheck": "nuxi typecheck"
   },
   "dependencies": {
+    "@pinia/nuxt": "0.11.2",
     "nuxt": "^4.0.3",
+    "pinia": "^3.0.3",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
