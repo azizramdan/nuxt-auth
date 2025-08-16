@@ -1,75 +1,19 @@
-# Nuxt Minimal Starter
+# Nuxt Auth
+A minimal authentication frontend built with Nuxt 4 and Bun, designed as a companion to the [CodeIgniter Auth API backend](https://github.com/azizramdan/codeigniter-auth). Features support for login, logout, and protected routes using token-based authentication and RBAC.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Tech stack
+- Nuxt 4
+- Bun 1.2
 
-## Setup
-
-Make sure to install dependencies:
+# Run project
 
 ```bash
-# npm
-npm install
+# setup .env values
+cp .env.example .env
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
+# install dependencies
 bun install
-```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
+# run dev mode
 bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
