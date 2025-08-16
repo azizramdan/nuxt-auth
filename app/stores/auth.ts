@@ -5,8 +5,8 @@ export interface User {
   username: string
   name: string
   nip: string | null
-  groups: Array<string>
-  permissions: Array<string>
+  groups: Array<Group>
+  permissions: Array<Permission | string>
   pegawai: {
     nip: string
     nama: string

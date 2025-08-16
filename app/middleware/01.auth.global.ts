@@ -11,4 +11,22 @@ export default defineNuxtRouteMiddleware((to) => {
       },
     })
   }
+
+  if (to.meta.permissions) {
+    if (!hasPermission(to.meta.permissions)) {
+      return showError({
+        statusCode: 403,
+        statusMessage: 'Forbidden',
+      })
+    }
+  }
+
+  if (to.meta.groups) {
+    if (!hasGroup(to.meta.groups)) {
+      return showError({
+        statusCode: 403,
+        statusMessage: 'Forbidden',
+      })
+    }
+  }
 })
