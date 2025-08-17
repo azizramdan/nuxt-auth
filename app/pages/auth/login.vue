@@ -16,7 +16,7 @@ const isBusy = reactive({
   login: false,
 })
 
-const errors = ref(null)
+const errorMessage = ref()
 
 async function login() {
   isBusy.login = true
@@ -25,7 +25,7 @@ async function login() {
 
   if (!result.success) {
     isBusy.login = false
-    errors.value = result.message
+    errorMessage.value = result.message
     return
   }
 
@@ -36,7 +36,7 @@ async function login() {
 <template>
   <form @submit.prevent="login">
     <div style="color: red">
-      {{ errors }}
+      {{ errorMessage }}
     </div>
     <div>
       <label for="username">Username</label>
