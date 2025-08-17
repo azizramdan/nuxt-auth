@@ -17,5 +17,5 @@ export const $api = $fetch.create({
 })
 
 export function getApiErrorMessage(error: unknown, defaultErrorMessage = 'Terjadi kesalahan') {
-  return (error as FetchError).data?.message || defaultErrorMessage
+  return String((error as FetchError).data?.message || defaultErrorMessage)
 }
