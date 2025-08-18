@@ -22,7 +22,7 @@ bun run lint:fix
 bun run typecheck
 ```
 
-# Run project
+## Run project
 
 ```bash
 # setup .env values
