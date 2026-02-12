@@ -3,7 +3,7 @@ A minimal authentication frontend built with Nuxt 4 and Bun, designed as a compa
 
 ## Tech stack
 - Nuxt 4
-- Bun 1.2
+- Bun >= 1.3
 
 ## Code style
 
