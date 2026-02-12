@@ -34,3 +34,23 @@ bun install
 # run dev mode
 bun run dev
 ```
+
+## Deploy production
+
+### Build image
+
+```bash
+docker compose build
+```
+
+### Start container
+
+```bash
+docker compose up -d
+```
+
+### Rebuild
+
+```bash
+. build.sh
+```
